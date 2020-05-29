@@ -8,7 +8,7 @@ public class Reteta
     private String pacient;
     private List<String> medicamente;
     private int reducere;
-    private int pret;
+    private double pret;
 
     public Reteta()
     {
@@ -40,8 +40,8 @@ public class Reteta
     public int getReducere() {return reducere;}
     public void setReducere(int reducere) {this.reducere = reducere;}
 
-    public int getPret() {return pret;}
-    public void setPret(int pret) {this.pret = pret;}
+    public double getPret() {return pret;}
+    public void setPret(double pret) {this.pret = pret;}
 
     @Override
     public String toString()
