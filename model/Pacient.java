@@ -38,6 +38,9 @@ public class Pacient extends User
     public List<String> getAlte_Afectiuni() {return alte_Afectiuni;}
     public void setAlte_Afectiuni(List<String> alte_Afectiuni) {this.alte_Afectiuni = alte_Afectiuni;}
 
+    public String getDiagnostic() {return diagnostic;}
+    public void setDiagnostic(String diagnostic) {this.diagnostic = diagnostic;}
+
     @Override
     public String toString()
     {
