@@ -6,8 +6,8 @@ import java.util.Arrays;
 
 public class AfectiuneRepository
 {
-    private Afectiune[] afectiuni = new Afectiune[500];
-    private int nAfectiuni;
+    protected Afectiune[] afectiuni = new Afectiune[500];
+    protected int nAfectiuni;
 
     public AfectiuneRepository()
     {

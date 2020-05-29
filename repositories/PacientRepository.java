@@ -14,7 +14,8 @@ public class PacientRepository
     {
         pacienti[0] = new Pacient(0, "parola1234", "horia.ionescu@pacient.ro", "Ionescu",
                 "Horia", "M", 30, "0712345678", "salariat",
-                Arrays.asList("febra", "tuse seaca"), Collections.singletonList("astm"), "");
+                Arrays.asList("secretii nazale", "nas infundat", "stranut"),
+                Collections.singletonList("astm"), "");
         pacienti[1] = new Pacient(1, "parola1234", "alina.nuc@pacient.ro", "Nuc",
                 "Alina", "F", 15, "0723456789", "elev",
                 Arrays.asList("dureri de cap", "febra"), Collections.singletonList("miopie"), "");
