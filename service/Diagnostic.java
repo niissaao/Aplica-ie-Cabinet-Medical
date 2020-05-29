@@ -26,5 +26,4 @@ public class Diagnostic
         }
         return pacient.getDiagnostic();
     }
-    
 }
