@@ -61,4 +61,19 @@ public class MedicamentRepository
             return proxyMedicamente;
         }
     }
+
+    public Medicament findMedicament(String denumireMedicament) //cauta dupa denumire
+    {
+        for(Medicament m : medicamente)
+        {
+            if(m != null)
+            {
+                if(denumireMedicament.equals(m.getDenumire()))
+                {
+                    return m;
+                }
+            }
+        }
+        return null;
+    }
 }

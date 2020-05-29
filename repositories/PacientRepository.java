@@ -62,4 +62,19 @@ public class PacientRepository
             return proxyPacienti;
         }
     }
+
+    public Pacient findPacient(String numePacient, String prenumePacient) //cauta dupa nume
+    {
+        for(Pacient p : pacienti)
+        {
+            if(p != null)
+            {
+                if(numePacient.equals(p.getNume()) && prenumePacient.equals(p.getPrenume()))
+                {
+                    return p;
+                }
+            }
+        }
+        return null;
+    }
 }

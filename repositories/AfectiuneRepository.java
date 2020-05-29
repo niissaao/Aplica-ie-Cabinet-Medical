@@ -60,4 +60,19 @@ public class AfectiuneRepository
             return proxyAfectiuni;
         }
     }
+
+    public Afectiune findAfectiune(String denumireAfectiune) //cauta dupa denumire
+    {
+        for(Afectiune a : afectiuni)
+        {
+            if(a != null)
+            {
+                if(denumireAfectiune.equals(a.getDenumire()))
+                {
+                    return a;
+                }
+            }
+        }
+        return null;
+    }
 }

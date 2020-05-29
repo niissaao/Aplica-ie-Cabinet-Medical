@@ -57,4 +57,19 @@ public class MedicRepository
             return proxyMedici;
         }
     }
+
+    public Medic findMedic(String numeMedic, String prenumeMedic) //cauta dupa nume
+    {
+        for(Medic m : medici)
+        {
+            if(m != null)
+            {
+                if(numeMedic.equals(m.getNume()) && prenumeMedic.equals(m.getPrenume()))
+                {
+                    return m;
+                }
+            }
+        }
+        return null;
+    }
 }

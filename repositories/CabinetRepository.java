@@ -59,4 +59,19 @@ public class CabinetRepository
             return proxyCabinete;
         }
     }
+
+    public Cabinet findCabinet(int idCabinet) //cauta dupa id
+    {
+        for(Cabinet c : cabinete)
+        {
+            if(c != null)
+            {
+                if(idCabinet == c.getId())
+                {
+                    return c;
+                }
+            }
+        }
+        return null;
+    }
 }
