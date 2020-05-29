@@ -6,7 +6,7 @@ public class Medicament
 {
     private int id;
     private String denumire;
-    private float pret;
+    private double pret;
     private List<String> afectiuni;
 
     public Medicament()
@@ -17,7 +17,7 @@ public class Medicament
         this.afectiuni = null;
     }
 
-    public void Medicamet(int id, String denumire, float pret, List<String> afectiuni)
+    public Medicament(int id, String denumire, double pret, List<String> afectiuni)
     {
         this.id = id;
         this.denumire = denumire;
@@ -31,8 +31,8 @@ public class Medicament
     public String getDenumire() {return denumire;}
     public void setDenumire(String denumire) {this.denumire = denumire;}
 
-    public float getPret() {return pret;}
-    public void setPret(float pret) {this.pret = pret;}
+    public double getPret() {return pret;}
+    public void setPret(double pret) {this.pret = pret;}
 
     public List<String> getAfectiuni() {return afectiuni;}
     public void setAfectiuni(List<String> afectiuni) {this.afectiuni = afectiuni;}
